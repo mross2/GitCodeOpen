@@ -1,0 +1,81 @@
+body{
+	background-color: #000;
+}
+input{
+	margin-top:10px;
+}
+#playingArea{
+	background-color: #333;
+	width:85%;
+	height:600px;
+	margin-left:2%;
+	display:inline-block;
+	border: 2px dotted yellow;
+	position:relative;
+
+}
+#ctrlArea{
+	width:10%;
+	height:600px;
+	display:inline-block;
+	vertical-align:top;
+	margin-left:10px;
+	border: 2px dotted white;
+	text-align:center;
+	position:relative;
+   }
+
+.hide{
+	  display:none;
+  }
+ #garbageBin{
+ position:absolute;
+ bottom:0px;
+
+ } 
+
+.character{
+    width:100px;
+	height:100px;
+	z-index:1;
+}
+
+#shootingArea{
+	background-color: #333;
+	width:85%;
+	height: 100px;
+	display:inline-block;
+	vertical-align:top;
+	margin-left:2%;
+	border: 2px dotted white;
+	position:relative;
+}
+
+#scoreArea{
+	width:10%;
+	height: 100px;
+	display:inline-block;
+	vertical-align:top;
+	margin-left:10px;
+	border: 2px dotted white;
+	text-align:center;
+	position:relative;
+	color: white;
+}
+
+#gun{
+	height: 95px;
+	width: 95px;
+}
+
+#bullet{
+	position: relative;
+	width: 16px;
+	height: 50px;
+}
+
+#target{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+}

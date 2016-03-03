@@ -1,0 +1,34 @@
+{
+  "record": [
+    {
+      "id" : "001",
+      "fName" : "Tyler",
+      "lName" : "Burke"
+    },
+    {
+      "id" : "002",
+      "fName" : "Shane",
+      "lName" : "Wang"
+    },
+    {
+      "id" : "003",
+      "fName" : "Findlay",
+      "lName" : "Hilchie"
+    },
+    {
+      "id" : "004",
+      "fName" : "Christian",
+      "lName" : "Hernon"
+    },
+    {
+      "id" : "005",
+      "fName" : "Justin",
+      "lName" : "Cooke"
+    },
+    {
+      "id" : "006",
+      "fName" : "Matthew",
+      "lName" : "Ross"
+    }
+  ]
+}

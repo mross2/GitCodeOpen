@@ -1,0 +1,45 @@
+/* Colapse all the borders*/
+.spuzzle , .subTable {
+   border-collapse: collapse;
+
+}
+/*gives .spuzzle td border*/
+.spuzzle td{
+   border: 5px outset gray;
+}
+/*.spuzzle th font size and color*/
+.spuzzle th{
+   font-size: 8px;
+   color: gray;
+}
+/*gives .spuzzle tbody th height*/
+.spuzzle tbody th{
+   height: 40px;
+}
+/*gives inner inner TDS font size color centres and borders*/
+.subTable td{
+   font-size: 20px;
+   color: blue;
+   height: 40px;
+   width: 40px;
+   text-align: center;
+   border: 1px solid black;
+}
+.subTable .edit{
+   color: green;
+}
+/*makes GOlD Boox Backgrounds*/
+.goldBox td{
+   background-image: url("gold.jpg");
+   background-repeat: no-repeat;
+   position: 50% 50%;
+}
+/*makes green box backagrounds*/
+.greenBox td{
+   background-image: url("green.jpg");
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+}
+#err{
+   color: red;
+}

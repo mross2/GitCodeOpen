@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="StudentAddApp">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src=https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <title>Lab Javascript lab 4</title>
+</head>
+<body ng-controller="StudentController">
+<div id="studentInputForm">
+    <form ng-submit="addNewStudent()">
+        <p>Student ID:</p>
+        <input ng-model="newStudentId" type="text" name="studentID"><br />
+        <p>First Name:</p>
+        <input ng-model="newStudentFirstName" type="text" name="firstName"><br />
+        <p>Last Name:</p>
+        <input ng-model="newStudentLastName" type="text" name="lastName"><br />
+        <input id="submitStudent" type="submit">
+        <p id="errorField"></p>
+    </form>
+</div>
+<div id="studentList">
+    <ul>
+        <li ng-repeat="student in students" ng-mouseover="showTool()">
+            <span>{{student.id}}</span>
+            <span>{{student.firstName}}</span>
+            <span>{{student.lastName}}</span>
+        </li>
+    </ul>
+</div>
+<div id="tooltip" ng-show="showDiv" ng-click="hideTool()">
+    <p>{{students}}</p>
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>

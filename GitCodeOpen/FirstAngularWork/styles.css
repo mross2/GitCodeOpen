@@ -1,0 +1,41 @@
+form,p,input {
+    padding: 0px;
+    margin: 0px;
+}
+#submitStudent {
+    margin-top: 1em;
+
+    margin-left: 17.5em;
+}
+form {
+    margin: 1em 0em 2em 1em;
+    width: 20em;
+    background-color: darkgrey;
+    padding: 5px;
+    border: 3px solid black;
+    border-radius:10px ;
+}
+
+form p{
+    clear: both;
+    float: left;
+    width: 6em;
+}
+
+form p, input {
+    padding: 5px;
+}
+li{
+    width: 50%;
+}
+
+#tooltip {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    z-index: 1;
+    border: 3px solid black;
+    padding: 10px;
+    background-color: dodgerblue;
+    display: none;
+}

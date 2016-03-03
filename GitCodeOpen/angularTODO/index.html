@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="todoApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo Application</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="scripts.js"></script>
+    <style type="text/css">
+        ul{
+            list-style: none;
+        }
+        .true{
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body data-ng-controller="todoController">
+    <h1>Matthew's Todo Items</h1>
+    <ul>
+        <li data-ng-repeat="todo in todos"><input type="checkbox" data-ng-model = "todo.done"/>
+            <span class="done-{{todo.done}}">{{todo.text}}</span>
+        </li>
+    </ul>
+    <form data-ng-submit="addNewTodo()">
+        <label>New Todo:</label>
+        <input type="text" data-ng-model="newItem"/>
+        <input type="submit" value="add"/>
+    </form>
+    <hr/>
+    <button data-ng-click="archiveTodos()">Archive</button>
+</body>
+</html>
